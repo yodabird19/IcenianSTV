@@ -176,7 +176,7 @@ def STV(ballots, k, candidateReferences):
     return winners
 
 cand = ["Wyatt","Xavier","Yvette","Zoe"]
-b1 = ballotFromNames("Alice", ["Yvette", "Wyatt", "Xavier", "Zoe"], 1, 4)
+b1 = ballotFromNames("Alice", ["Yvette", "Wyatt", "Xavier", "Zoe"], cand)
 b2 = ballotFromNames("Bob", ["Zoe", "Xavier", "Yvette"], cand)
 b3 = ballotFromNames("Claire", ["Wyatt"], cand)
 b4 = ballotFromNames("David", ["Yvette", "Zoe", "Wyatt", "Xavier"], cand)
@@ -184,3 +184,4 @@ b5 = ballotFromNames("Eliza", ["Wyatt", "Zoe", "Xavier"], cand)
 bs = [b1,b2,b3,b4,b5]
 
 print(STV(bs,1,cand))
+
